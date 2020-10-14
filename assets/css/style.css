@@ -128,7 +128,7 @@ input[type="color"],
 }
 
 .ml1 .letter {
-  display: inline-block;
+  display: run-in;
   line-height: 1em;
   color: white;
 }
