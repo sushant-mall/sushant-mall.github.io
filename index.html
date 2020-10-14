@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="assets/css/roboto-railway-webfont.css" />
         <link rel="stylesheet" href="assets/css/linearicons-web-font.css" />
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!--Theme custom css -->
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -28,6 +28,11 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -73,9 +78,18 @@
 
                         <div class="home-wrapper">
                             <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                                <div class="home-content">
-                                    <h1>Sushant Mall</h1>
-                                    <p>#App Developer &nbsp; #Tester &nbsp; #Creative UI Designer</p>
+                                <div class="">
+                                   <h1 class="ml1" >
+                                      <span class="text-wrapper">
+                                        <span class="line line1" style="color: rgb(233, 69, 69);"></span>
+                                        <span class="letters">SUSHANT<br> MALL</span>
+                                        <span class="line line2" style="color: rgb(233, 69, 69);"></span>
+                                      </span>
+                                    </h1>
+                                    <br>
+                                    <div class="home-content">
+                                          <p>#App Developer &nbsp; #Tester &nbsp; #Creative UI Designer</p>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +133,8 @@
         <section id="features" class="sections lightbg">
 
             <div class="heading-content text-center">
-                <h3 style="color:white">My Working Process </h3>
+
+                <h3 style="color:white" class="animated rubberBand">My Working Process </h3>
                     <p style="color:white">Hi, i’m Sushant Mall an avid follower of technology and a developer by trade.</p>
             </div>
 
@@ -128,7 +143,7 @@
                 <div class="row">
                     <div class="features-wrapper">
 
-                        <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="col-md-3 col-sm-6 col-xs-12" data-aos="flip-up">
                             <div class="features-bg design">
 
                                 <div class="features-item">
@@ -139,7 +154,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="col-md-3 col-sm-6 col-xs-12" data-aos="flip-up">
                             <div class="features-bg development">
 
                                 <div class="features-item">
@@ -150,8 +165,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="features-bg testing">
+                        <div class="col-md-3 col-sm-6 col-xs-12" >
+                            <div class="features-bg testing" data-aos="flip-up">
 
                                 <div class="features-item">
                                     <i class="lnr lnr-dinner"></i>
@@ -161,7 +176,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="col-md-3 col-sm-6 col-xs-12" data-aos="flip-up">
                             <div class="features-bg launch">
 
                                 <div class="features-item">
@@ -246,7 +261,7 @@
             <div class="container">
 
                 <div class="heading-content text-center">
-                    <h3 style="color:white">My Latest Works</h3>
+                    <h3 style="color:white" class="animated rubberBand">My Latest Works</h3>
                 </div>
 
                 <!-- Example row of columns -->
@@ -261,13 +276,13 @@
                         </div>
 
                         <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/sushant-mall/Age-In-Minutes" ><img src="assets/images/portfolio/pf2.png" alt="" /></a>
+                            <div class="portfolio-item" class="animated infinite bounceInDown" >
+                                <a href="https://github.com/sushant-mall/Age-In-Minutes"><img src="assets/images/portfolio/pf2.png" alt="" /></a>
                             </div>
                         </div>
 
                         <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
+                            <div class="portfolio-item" class="animated infinite bounceInDown">
                                 <a href="https://github.com/sushant-mall/Meme-sharing-app"><img src="assets/images/portfolio/pf3.png" alt="" /></a>
                             </div>
                         </div>
@@ -437,7 +452,9 @@
          <img src="https://counter11.stat.ovh/private/freecounterstat.php?c=jjr116g569qfn1h7ajebewqknt2m33p9" border="0" title="free counter" alt="free counter"></a></noscript>
 
 
-
+<script>
+       AOS.init();
+</script>
 
      <script>
       VANTA.NET({
@@ -511,6 +528,10 @@ VANTA.FOG({
     })
   </script>
 
+
+  <script src="assets/js/animate.js"></script>
+
+
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
 
@@ -519,6 +540,7 @@ VANTA.FOG({
         <script src="assets/js/modernizr.js"></script>
 
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/aos.js"></script>
     </body>
 
 </html>
