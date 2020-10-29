@@ -663,6 +663,7 @@ textarea::-ms-input-placeholder
 /* For Portfolio Section*/
 .portfolio-item {
 	margin-bottom:20px;
+
 }
 
 .portfolio-wrapper2{
@@ -675,6 +676,43 @@ textarea::-ms-input-placeholder
 }
 .portfolio-wrapper2 .portfolio-item.width-img img{
     width:100%;
+}
+
+.portfolio-details {
+    transition: all 0.7s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-item:hover .portfolio-details {
+    background-color: #808080b6;
+    color: white;
+}
+
+.portfolio-item:hover .portfolio-details p2 {
+    color: rgb(227, 240, 14);
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-details p1 {
+    color: rgb(138, 240, 14);
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+.portfolio-details p a {
+    opacity: 0;
 }
 
 /* For Testimonial Section*/
@@ -757,11 +795,12 @@ textarea::-ms-input-placeholder
 /* For Footer Area */
 
 .main-footer .social{
+  margin-top: 10px;
     margin-bottom:10px;
 }
 .main-footer .social a{
     color:#c3bec2;
-    font-size:15px;
+    font-size:25px;
 }
 .main-footer .social a:hover{
     color:#ff2b4a;
